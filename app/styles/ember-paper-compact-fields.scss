@@ -8,6 +8,15 @@
 }
 
 .paper-radio-with-content {
-  width: 30px;
-  display: inline-block;
+  & > md-radio-button {
+    width: 30px;
+    display: inline-block;
+  }
+}
+.paper-checkbox-with-content {
+  padding-left: 30px;
+
+  & > md-checkbox {
+    margin-left: -30px;
+  }
 }

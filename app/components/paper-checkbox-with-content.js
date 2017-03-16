@@ -1,0 +1,1 @@
+export { default } from 'ember-paper-compact-fields/components/paper-checkbox-with-content';

@@ -9,6 +9,7 @@
 
       <p>In short, the best way to make sure you have a/an {{paper-inline-input value=adjective1 placeholder="adjective" onChange=(action (mut adjective1))}} application is to keep an eye on {{paper-inline-input value=noun3 placeholder="noun" onChange=(action (mut noun3))}} — remembering they document intent but not necessarily the final {{paper-inline-input value=noun4 placeholder="noun" onChange=(action (mut noun4))}}, — keep your application clean of deprecations, and when possible test your application against beta and canary.</p>
     </div>
+
     <div class="md-padding">
       <span class="md-display-2">Favorite part of Ember</span>
 
@@ -25,6 +26,16 @@
       {{#paper-radio-with-content toggle=true value="Other" groupValue=toggleValue
         onChange=(action (mut toggleValue))}}Other {{paper-inline-input value=other placeholder="Tell us more" onChange=(action (mut other))}}
       {{/paper-radio-with-content}}
+    </div>
+
+    <div class="md-padding">
+      <span class="md-display-2">Toggle additional content</span>
+      {{#paper-checkbox-with-content toggle=false value=sendReminder onChange=(action (mut sendReminder))}}
+        Send a reminder
+        {{#if sendReminder}}
+          <br>{{paper-inline-input class="md-block" value=reminder placeholder="What should the reminder say?" onChange=(action (mut reminder))}}
+        {{/if}}
+      {{/paper-checkbox-with-content}}
     </div>
   </div>
 </div>
