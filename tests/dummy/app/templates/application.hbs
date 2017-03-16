@@ -1,5 +1,11 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="layout-row layout-align-center">
+  <div class="layout-column flex-50 md-padding">
+    <span class="md-display-2">Fill in the blanks</span>
 
-{{outlet}}
+    <p>Ember.js has a strong emphasis on {{paper-inline-input value=noun1 placeholder="noun" onChange=(action (mut noun1))}}, which means that framework developers take great care when designing new functionality to make sure it fits with the existing functionalities, and provides a path forward for users to upgrade without being subjected to churn.</p>
+
+    <p>Ember.js also follow a community-driven process for its development that incorporates {{paper-inline-input value=noun2 placeholder="noun" onChange=(action (mut noun2))}} for features and deprecations and a six-week "train release schedule". Every six weeks, candidate features are reviewed and either deemed ready to be included in the stable release, or carry on in beta for another cycle until the next release happens.</p>
+
+    <p>In short, the best way to make sure you have a/an {{paper-inline-input value=adjective1 placeholder="adjective" onChange=(action (mut adjective1))}} application is to keep an eye on {{paper-inline-input value=noun3 placeholder="noun" onChange=(action (mut noun3))}} — remembering they document intent but not necessarily the final {{paper-inline-input value=noun4 placeholder="noun" onChange=(action (mut noun4))}}, — keep your application clean of deprecations, and when possible test your application against beta and canary.</p>
+  </div>
+</div>
